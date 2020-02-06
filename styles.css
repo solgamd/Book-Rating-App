@@ -1,0 +1,16 @@
+table {
+    border: solid 1px grey;
+
+}
+
+td {
+    width: 3em;
+    margin: 10px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+}
