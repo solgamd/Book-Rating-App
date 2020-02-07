@@ -3,9 +3,14 @@ table {
 
 }
 
-td {
-    width: 3em;
+td .col {
+    width: 5em;
     margin: 10px;
+}
+
+.table-rows {
+    display: flex;
+    justify-content: around;
 }
 
 .label {
