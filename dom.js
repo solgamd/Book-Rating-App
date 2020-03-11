@@ -4,17 +4,22 @@ $(".button").click(function() {
 
 $(".table-btn").insertAfter("#form");
 
+function removeItem(tr) {
+    $("tbody").remove(tr);
+}
+
 $(".table-btn").click(() => {
   const name = $(".name-input").val();
   const rating = $(".rating-input").val();
 
   let tr = $("<tr></tr>");
-  let title = $("<td>" + name + "</td>");
-  let td = $('<td>'+name+'</td><td>'+rating+'</td><td>'+'X'+'</td>')
+  let td = $('<td>'+name+'</td><td>'+rating+'</td><td>'+'<button onclick="removeItem()">X</button>'+'</td>')
 
   $("tbody").append(tr);
   $(tr).addClass("table-rows");
+  $(td).addClass("col");
   $(tr).append(td);
+
   
 
   // $(newName).append(`<td> + ${newRating} + </td>`);
