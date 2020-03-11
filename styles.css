@@ -1,18 +1,30 @@
-table {
-    border: solid 2px grey;
+h1 {
     margin: 20px
 }
 
-td {
-    width: 5em;
-    margin: 50px;
+.form-div {
+    vertical-align: middle;
+ 
+}
+
+table {
+    border: solid 2px grey;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 800px;
+}
+
+thead {
+    width: 100px;
+    background-color: lightgrey;
+}
+
+td tr {
     display: flex;
     justify-content: center;
 }
 
 .col th {
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     justify-content: center;
 }
@@ -20,10 +32,11 @@ td {
 .table-rows {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .label {
     display: flex;
-    align-items: center;
-    vertical-align: middle;
+    justify-content: center;
+    /* vertical-align: middle; */
 }

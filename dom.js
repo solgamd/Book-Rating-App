@@ -1,29 +1,29 @@
-$(".button").click(function() {
-  console.log("A button was clicked");
+$(".form-btn").insertAfter("#form");
+
+$('#table').on('click', '.btn', function() {
+    $(this).closest('tr').remove();
 });
 
-$(".table-btn").insertAfter("#form");
-
-function removeItem(tr) {
-    $("tbody").remove(tr);
-}
-
-$(".table-btn").click(() => {
+$(".form-btn").click(() => {
   const name = $(".name-input").val();
   const rating = $(".rating-input").val();
 
-  let tr = $("<tr></tr>");
-  let td = $('<td>'+name+'</td><td>'+rating+'</td><td>'+'<button onclick="removeItem()">X</button>'+'</td>')
+  const tr = $("<tr></tr>");
+  const td = $(
+    "<td>" +
+      name +
+      "</td><td>" +
+      rating +
+      "</td><td>" +
+      '<button onclick="removeItem()" class="btn">X</button>' +
+      "</td>"
+  );
 
   $("tbody").append(tr);
   $(tr).addClass("table-rows");
   $(td).addClass("col");
   $(tr).append(td);
 
-  
-
-  // $(newName).append(`<td> + ${newRating} + </td>`);
-  // $('table').append(newRating);
   $(".name-input").val("");
   $(".rating-input").val("");
 });

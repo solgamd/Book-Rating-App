@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rate A Book</h1>
+    <h1 class="text-center">Rate A Book</h1>
     <div class="container d-flex justify-content-center">
         <form action="submit" id="form">
-            <div class="row ">
-                <label for="name" class="label">Title</label>
-                <input type="text" name="name" class="name-input m-3">
+            <div class="row form-div">
+                <!-- <label for="name" class="label">Title</label> -->
+                <input type="text" name="name" class="name-input m-3" placeholder="Book Title">
            
-                <label for="rating" class="label">Rating</label>
-                <input type="text" name="rating" class="rating-input m-3">
+                <!-- <label for="rating" class="label">Rating</label> -->
+                <input type="text" name="rating" class="rating-input m-3" placeholder="Rating">
             </div>
-            <button type="submit" class="table-btn m-3">Submit Book</button>
+            <button type="submit" class="form-btn m-3">Submit Book</button>
         </form>
        </div> 
 
 
-       <div>
-            <table class="table">
+       <div class="d-flex justify-content-center">
+            <table class="table" id="table">
                 <thead>
                     <tr class="row d-flex justify-content-around">
-                        <th scope="col">Title</th>
+                        <th>Title</th>
                         <th scope="col">Rating</th>
                         <th scope="col">Remove?</th>
                     </tr>
