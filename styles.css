@@ -5,7 +5,9 @@ table {
 
 td .col {
     width: 5em;
-    margin: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .table-rows {
@@ -17,5 +19,8 @@ td .col {
     display: flex;
     align-items: center;
     vertical-align: middle;
+}
 
+.cell {
+    margin: 50px
 }
